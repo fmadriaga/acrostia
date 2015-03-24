@@ -1,0 +1,15 @@
+@mixin center(){
+	display:block;
+	margin:auto auto;
+}
+
+@mixin degradado(){
+	background: rgba(43,43,43,0.64);
+	background: -moz-linear-gradient(top, rgba(43,43,43,0.64) 0%, rgba(102,102,102,0.64) 0%, rgba(89,89,89,0.64) 0%, rgba(0,0,0,0.64) 0%, rgba(44,44,44,0) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(43,43,43,0.64)), color-stop(0%, rgba(102,102,102,0.64)), color-stop(0%, rgba(89,89,89,0.64)), color-stop(0%, rgba(0,0,0,0.64)), color-stop(100%, rgba(44,44,44,0)));
+	background: -webkit-linear-gradient(top, rgba(43,43,43,0.64) 0%, rgba(102,102,102,0.64) 0%, rgba(89,89,89,0.64) 0%, rgba(0,0,0,0.64) 0%, rgba(44,44,44,0) 100%);
+	background: -o-linear-gradient(top, rgba(43,43,43,0.64) 0%, rgba(102,102,102,0.64) 0%, rgba(89,89,89,0.64) 0%, rgba(0,0,0,0.64) 0%, rgba(44,44,44,0) 100%);
+	background: -ms-linear-gradient(top, rgba(43,43,43,0.64) 0%, rgba(102,102,102,0.64) 0%, rgba(89,89,89,0.64) 0%, rgba(0,0,0,0.64) 0%, rgba(44,44,44,0) 100%);
+	background: linear-gradient(to bottom, rgba(43,43,43,0.64) 0%, rgba(102,102,102,0.64) 0%, rgba(89,89,89,0.64) 0%, rgba(0,0,0,0.64) 0%, rgba(44,44,44,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#2c2c2c', GradientType=0 );
+}

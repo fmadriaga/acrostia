@@ -5,6 +5,58 @@
 @import "modules/all";
 @import "buttons";
 @import "figures";
-@import "grids";
 @import "reset";
 @import "typography";
+
+@import "inicio";
+@import "servicios";
+@import "nosotros";
+@import "trabajos";
+@import "contacto";
+
+
+body{
+	width:100%;
+	@include center();
+}
+
+.mainwrapper{
+	width:$ancho_principal;
+	@include center();
+}
+header{
+	height:120px;
+	width:100%;
+	top:0px;
+	position:fixed;
+	@include degradado();
+	@include center();
+}
+h1{
+	float:left;
+	font-size: 2em;
+	color:white;
+	font-family: $fuente_logo;
+	padding-top:50px;
+}
+
+nav{
+	float:right;
+	padding-top:50px;
+
+	ul{
+		list-style: none;
+
+		li{
+			display:inline;
+			padding-left:60px;
+
+			a{
+				text-decoration: none;
+				color:$menu-color;
+				font-family: $fuente_principal;
+				font-size:1em;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.inicio{
+	height:100vh;
+	position-top:0px;
+	background-image: url("../images/background_inicio.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+
+	.slide_handler{
+		@include center();
+		padding-top:30%;
+		width:$ancho_principal;
+
+		span{
+			font-size: 4em;
+			color:white;
+			font-family: $fuente_logo;
+			display:inline block;
+
+			&:nth-child(1){
+				text-align:left;
+				float:left;
+			}
+
+			&:nth-child(2){
+
+				font-size:3em;
+				text-align:center;
+				margin:auto auto;
+			}
+			
+			&:nth-child(3){
+				text-align:right;
+				float:right;
+			}
+			
+		}
+	}
+}

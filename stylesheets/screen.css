@@ -69,12 +69,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*Importa los Partials*/
-/* line 4, ../sass/partials/_base.scss */
-#lista {
-  background-color: blue;
+/*Importa los módulos*/
+/* line 1, ../sass/partials/_reset.scss */
+body {
+  color: white;
+  font-family: "Lato", sans-serif;
 }
 
-/*Importa los módulos*/
+/* line 6, ../sass/partials/_reset.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 9, ../sass/partials/_reset.scss */
+h2 {
+  font-size: 1.4em;
+}
+
+/* line 12, ../sass/partials/_reset.scss */
+h3 {
+  font-size: 1em;
+}
+
 /* line 1, ../sass/partials/_inicio.scss */
 .inicio {
   height: 100vh;
@@ -96,40 +112,95 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 4em;
   color: white;
   font-family: "Lobster", cursive;
-  display: inline block;
 }
-/* line 20, ../sass/partials/_inicio.scss */
+/* line 19, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span:nth-child(1) {
-  text-align: left;
   float: left;
 }
-/* line 25, ../sass/partials/_inicio.scss */
+/* line 23, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span:nth-child(2) {
-  font-size: 3em;
-  text-align: center;
-  margin: auto auto;
+  float: right;
 }
-/* line 32, ../sass/partials/_inicio.scss */
-.inicio .slide_handler span:nth-child(3) {
+/* line 29, ../sass/partials/_inicio.scss */
+.inicio .slide_handler div {
+  display: block;
+  margin: auto auto;
+  width: 350px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 36, ../sass/partials/_inicio.scss */
+.inicio .slide_handler div span {
+  font-size: 2.1em;
+  color: rgba(116, 199, 213, 0.9);
+  display: inline;
+}
+/* line 42, ../sass/partials/_inicio.scss */
+.inicio .slide_handler div span:nth-child(1) {
   text-align: right;
+  float: left;
+}
+/* line 47, ../sass/partials/_inicio.scss */
+.inicio .slide_handler div span:nth-child(2) {
+  font-size: 5em;
   float: right;
 }
 
-/* line 18, ../sass/partials/_base.scss */
+/* line 1, ../sass/partials/_servicios.scss */
+.servicios {
+  height: 100vh;
+  min-height: 600px;
+  background-color: #b24a50;
+  background-attachment: fixed;
+}
+/* line 7, ../sass/partials/_servicios.scss */
+.servicios .servicios_main {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* line 11, ../sass/partials/_servicios.scss */
+.servicios .servicios_main h2 {
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+/* line 16, ../sass/partials/_servicios.scss */
+.servicios .servicios_main p {
+  line-height: 20px;
+}
+/* line 22, ../sass/partials/_servicios.scss */
+.servicios section article {
+  width: 260px;
+  height: 300px;
+  display: inline-table;
+  margin-left: 16px;
+  background-color: #c8535a;
+}
+/* line 29, ../sass/partials/_servicios.scss */
+.servicios section article p {
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+/* line 34, ../sass/partials/_servicios.scss */
+.servicios section article:nth-child(1) {
+  margin-left: 0px;
+}
+
+/* line 17, ../sass/partials/_base.scss */
 body {
   width: 100%;
   display: block;
   margin: auto auto;
 }
 
-/* line 23, ../sass/partials/_base.scss */
+/* line 22, ../sass/partials/_base.scss */
 .mainwrapper {
   width: 1100px;
   display: block;
   margin: auto auto;
 }
 
-/* line 27, ../sass/partials/_base.scss */
+/* line 26, ../sass/partials/_base.scss */
 header {
   height: 120px;
   width: 100%;
@@ -147,33 +218,33 @@ header {
   margin: auto auto;
 }
 
-/* line 35, ../sass/partials/_base.scss */
+/* line 34, ../sass/partials/_base.scss */
 h1 {
   float: left;
-  font-size: 2em;
   color: white;
   font-family: "Lobster", cursive;
   padding-top: 50px;
 }
 
-/* line 43, ../sass/partials/_base.scss */
+/* line 41, ../sass/partials/_base.scss */
 nav {
   float: right;
   padding-top: 50px;
 }
-/* line 47, ../sass/partials/_base.scss */
+/* line 45, ../sass/partials/_base.scss */
 nav ul {
   list-style: none;
 }
-/* line 50, ../sass/partials/_base.scss */
+/* line 48, ../sass/partials/_base.scss */
 nav ul li {
   display: inline;
-  padding-left: 60px;
+  padding-left: 40px;
 }
-/* line 54, ../sass/partials/_base.scss */
+/* line 52, ../sass/partials/_base.scss */
 nav ul li a {
   text-decoration: none;
   color: white;
   font-family: "Lato", sans-serif;
   font-size: 1em;
+  text-transform: uppercase;
 }

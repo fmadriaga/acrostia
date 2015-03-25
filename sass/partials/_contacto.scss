@@ -1,0 +1,10 @@
+.contacto{
+	@include section_base($backcolor_contacto);
+	height:90vh;
+}
+
+footer{
+	height:10vh;
+	background-color:$backcolor_footer;
+	bottom:0px;
+}

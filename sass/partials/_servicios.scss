@@ -1,22 +1,6 @@
 .servicios{
-	height:100vh;
-	min-height:600px;
-	background-color:$backcolor_servicios;
-	background-attachment: fixed;
+	@include section_base($backcolor_servicios);
 
-	.servicios_main{
-		text-align:center;
-		padding-top:100px;
-		padding-bottom:100px;
-		h2{
-			text-transform:uppercase;
-			padding-bottom:50px;
-		}
-
-		p{
-			line-height: 20px;
-		}
-	}
 	section{
 
 		article{

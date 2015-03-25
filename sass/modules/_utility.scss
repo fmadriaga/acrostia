@@ -3,6 +3,29 @@
 	margin:auto auto;
 }
 
+@mixin section_title(){
+	.section_title{
+		text-align:center;
+		padding-top:100px;
+		padding-bottom:100px;
+		h2{
+			text-transform:uppercase;
+			padding-bottom:50px;
+		}
+
+		p{
+			line-height: 20px;
+		}
+	}
+}
+
+@mixin section_base($backcolor){
+	height:100vh;
+	min-height:600px;
+	background-color:$backcolor;
+	background-attachment: fixed;
+}
+
 @mixin degradado(){
 	background: rgba(43,43,43,0.64);
 	background: -moz-linear-gradient(top, rgba(43,43,43,0.64) 0%, rgba(102,102,102,0.64) 0%, rgba(89,89,89,0.64) 0%, rgba(0,0,0,0.64) 0%, rgba(44,44,44,0) 100%);

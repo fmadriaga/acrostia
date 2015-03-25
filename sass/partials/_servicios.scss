@@ -9,10 +9,22 @@
 			display:inline-table;
 			margin-left:16px;
 			background-color:$backcolor_servicios_article;
+
+			img{
+				width:166px;
+				height:166px;
+				@include center();
+			}
 			
+			h3{
+				padding:20px 0 20px 0;
+				text-align:center;
+			}
+
 			p{
 				text-align:center;
 				padding:0 10px 0 10px;
+				line-height:1.2em;
 			}
 			
 			&:nth-child(1){

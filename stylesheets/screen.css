@@ -98,6 +98,55 @@ p {
   font-size: 0.9em;
 }
 
+/* line 1, ../sass/partials/_header.scss */
+header {
+  height: 120px;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  background: rgba(43, 43, 43, 0.64);
+  background: -moz-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(43, 43, 43, 0.64)), color-stop(0%, rgba(102, 102, 102, 0.64)), color-stop(0%, rgba(89, 89, 89, 0.64)), color-stop(0%, rgba(0, 0, 0, 0.64)), color-stop(100%, rgba(44, 44, 44, 0)));
+  background: -webkit-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
+  background: -o-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
+  background: linear-gradient(to bottom, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#2c2c2c', GradientType=0 );
+  display: block;
+  margin: auto auto;
+}
+
+/* line 9, ../sass/partials/_header.scss */
+h1 {
+  float: left;
+  color: white;
+  font-family: "Lobster", cursive;
+  padding-top: 50px;
+}
+
+/* line 16, ../sass/partials/_header.scss */
+nav {
+  float: right;
+  padding-top: 50px;
+}
+/* line 20, ../sass/partials/_header.scss */
+nav ul {
+  list-style: none;
+}
+/* line 23, ../sass/partials/_header.scss */
+nav ul li {
+  display: inline;
+  padding-left: 40px;
+}
+/* line 27, ../sass/partials/_header.scss */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
 /* line 1, ../sass/partials/_inicio.scss */
 .inicio {
   height: 100vh;
@@ -169,11 +218,24 @@ p {
   background-color: rgba(200, 83, 90, 0.8);
 }
 /* line 13, ../sass/partials/_servicios.scss */
+.servicios section article img {
+  width: 166px;
+  height: 166px;
+  display: block;
+  margin: auto auto;
+}
+/* line 19, ../sass/partials/_servicios.scss */
+.servicios section article h3 {
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+/* line 24, ../sass/partials/_servicios.scss */
 .servicios section article p {
   text-align: center;
   padding: 0 10px 0 10px;
+  line-height: 1.2em;
 }
-/* line 18, ../sass/partials/_servicios.scss */
+/* line 30, ../sass/partials/_servicios.scss */
 .servicios section article:nth-child(1) {
   margin-left: 0px;
 }
@@ -210,67 +272,47 @@ footer {
   bottom: 0px;
 }
 
-/* line 17, ../sass/partials/_base.scss */
+/* line 2, ../sass/partials/_footer.scss */
+footer ul {
+  width: 188px;
+  padding-top: 20px;
+  display: block;
+  margin: auto auto;
+}
+/* line 7, ../sass/partials/_footer.scss */
+footer ul li {
+  display: inline;
+  padding-left: 20px;
+}
+/* line 11, ../sass/partials/_footer.scss */
+footer ul li svg {
+  fill: #75b4aa;
+  width: 21px;
+  height: 21px;
+}
+/* line 17, ../sass/partials/_footer.scss */
+footer ul li:nth-child(1) {
+  padding-left: 0px;
+  width: 31px;
+  height: 31px;
+}
+/* line 22, ../sass/partials/_footer.scss */
+footer ul li:nth-child(1) svg {
+  margin: auto auto;
+}
+
+/* line 19, ../sass/partials/_base.scss */
 body {
   width: 100%;
   display: block;
   margin: auto auto;
 }
 
-/* line 22, ../sass/partials/_base.scss */
+/* line 24, ../sass/partials/_base.scss */
 .mainwrapper {
   width: 1100px;
   display: block;
   margin: auto auto;
-}
-
-/* line 26, ../sass/partials/_base.scss */
-header {
-  height: 120px;
-  width: 100%;
-  top: 0px;
-  position: fixed;
-  background: rgba(43, 43, 43, 0.64);
-  background: -moz-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(43, 43, 43, 0.64)), color-stop(0%, rgba(102, 102, 102, 0.64)), color-stop(0%, rgba(89, 89, 89, 0.64)), color-stop(0%, rgba(0, 0, 0, 0.64)), color-stop(100%, rgba(44, 44, 44, 0)));
-  background: -webkit-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  background: -o-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  background: -ms-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  background: linear-gradient(to bottom, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#2c2c2c', GradientType=0 );
-  display: block;
-  margin: auto auto;
-}
-
-/* line 34, ../sass/partials/_base.scss */
-h1 {
-  float: left;
-  color: white;
-  font-family: "Lobster", cursive;
-  padding-top: 50px;
-}
-
-/* line 41, ../sass/partials/_base.scss */
-nav {
-  float: right;
-  padding-top: 50px;
-}
-/* line 45, ../sass/partials/_base.scss */
-nav ul {
-  list-style: none;
-}
-/* line 48, ../sass/partials/_base.scss */
-nav ul li {
-  display: inline;
-  padding-left: 40px;
-}
-/* line 52, ../sass/partials/_base.scss */
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 1em;
-  text-transform: uppercase;
 }
 
 /* line 7, ../sass/modules/_utility.scss */

@@ -1,0 +1,30 @@
+footer{
+	ul{
+		width:188px;
+		padding-top:20px;
+		@include center();
+
+		li{
+			display:inline;
+			padding-left:20px;
+
+			svg{
+				fill: $backcolor_contacto;
+				width:21px;
+				height:21px;
+			}
+		
+			&:nth-child(1){
+				padding-left:0px;
+				width:31px;
+				height:31px;
+
+				svg{
+					margin:auto auto;
+				}
+			}
+
+
+		}
+	}
+}

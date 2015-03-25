@@ -7,11 +7,13 @@
 @import "figures";
 @import "typography";
 
+@import "header";
 @import "inicio";
 @import "servicios";
 @import "nosotros";
 @import "trabajos";
 @import "contacto";
+@import "footer";
 
 
 body{
@@ -23,41 +25,6 @@ body{
 	width:$ancho_principal;
 	@include center();
 }
-header{
-	height:120px;
-	width:100%;
-	top:0px;
-	position:fixed;
-	@include degradado();
-	@include center();
-}
-h1{
-	float:left;
-	color:white;
-	font-family: $fuente_logo;
-	padding-top:50px;
-}
 
-nav{
-	float:right;
-	padding-top:50px;
-
-	ul{
-		list-style: none;
-
-		li{
-			display:inline;
-			padding-left:40px;
-
-			a{
-				text-decoration: none;
-				color:$menu-color;
-				font-family: $fuente_principal;
-				font-size:1em;
-				text-transform:uppercase;
-			}
-		}
-	}
-}
 
 @include section_title();

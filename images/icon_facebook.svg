@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<g id="White_1_">
-	<path d="M82.026,14H17.974C15.779,14,14,15.779,14,17.974v64.053C14,84.221,15.779,86,17.974,86h34.483V58.118h-9.383V47.252h9.383
-		v-8.014c0-9.3,5.68-14.363,13.976-14.363c3.974,0,7.389,0.295,8.385,0.428v9.719l-5.754,0.003c-4.512,0-5.385,2.144-5.385,5.29
-		v6.938h10.76l-1.401,10.866h-9.359V86h18.348C84.221,86,86,84.221,86,82.026V17.974C86,15.779,84.221,14,82.026,14z"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
+	 height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<g id="Capa_2">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#9D829A" d="M15,0c8.284,0,15,6.716,15,15s-6.716,15-15,15S0,23.284,0,15
+		S6.716,0,15,0z"/>
+</g>
+<g id="Capa_1">
+	<path fill="#FFFFFF" d="M16.128,11.857v-1.267c0-0.661,0.063-1.019,1.009-1.019h1.268V7.037h-2.026
+		c-2.437,0-3.294,1.232-3.294,3.295v1.525h-1.518v2.535h1.518v7.355h3.044v-7.355h2.026l0.268-2.535H16.128z"/>
 </g>
 </svg>

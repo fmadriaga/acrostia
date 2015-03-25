@@ -219,8 +219,8 @@ nav ul li a {
 }
 /* line 13, ../sass/partials/_servicios.scss */
 .servicios section article img {
-  width: 166px;
-  height: 166px;
+  width: 140px;
+  height: 140px;
   display: block;
   margin: auto auto;
 }

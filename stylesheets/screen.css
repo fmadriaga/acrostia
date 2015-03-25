@@ -272,33 +272,39 @@ footer {
   bottom: 0px;
 }
 
-/* line 2, ../sass/partials/_footer.scss */
+/* line 1, ../sass/partials/_footer.scss */
+footer {
+  height: 10vh;
+  min-height: 150px;
+}
+/* line 5, ../sass/partials/_footer.scss */
 footer ul {
-  width: 188px;
-  padding-top: 20px;
+  width: 310px;
   display: block;
   margin: auto auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-/* line 7, ../sass/partials/_footer.scss */
+/* line 10, ../sass/partials/_footer.scss */
 footer ul li {
   display: inline;
   padding-left: 20px;
 }
-/* line 11, ../sass/partials/_footer.scss */
+/* line 14, ../sass/partials/_footer.scss */
 footer ul li svg {
-  fill: #75b4aa;
-  width: 21px;
-  height: 21px;
+  width: 60px;
+  height: 60px;
 }
-/* line 17, ../sass/partials/_footer.scss */
+/* line 18, ../sass/partials/_footer.scss */
+footer ul li svg g:nth-child(1) {
+  fill: #75b4aa;
+}
+/* line 23, ../sass/partials/_footer.scss */
 footer ul li:nth-child(1) {
   padding-left: 0px;
-  width: 31px;
-  height: 31px;
-}
-/* line 22, ../sass/partials/_footer.scss */
-footer ul li:nth-child(1) svg {
-  margin: auto auto;
 }
 
 /* line 19, ../sass/partials/_base.scss */

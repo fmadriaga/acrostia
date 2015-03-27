@@ -25,7 +25,8 @@
 	background-color:$backcolor;
 	background-image:$backimage;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat:repeat-x;
+	@include animation(fondo 60s infinite linear);
 }
 
 @mixin degradado(){
@@ -58,4 +59,9 @@
 	-moz-transition:$propiedad $tiempo;
 	-o-transition:$propiedad $tiempo;
 	transition:$propiedad $tiempo;
+}
+
+@include keyframes(fondo){
+	0% {background-position:-200% 50%;}
+	100% {background-position:200% 50%;}
 }

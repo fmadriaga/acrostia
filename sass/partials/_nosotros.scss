@@ -2,6 +2,35 @@
 	@include section_base($backcolor_nosotros, $backimage_nosotros);
 	background-position: 30% 50%;
 	min-height: 1000px;
+	
+	.kicker{
+		width:275px;
+		height:40px;
+		font-size:1.4em;
+		text-transform: uppercase;
+		font-weight:bold;
+		background-color:$backcolor_nosotros_kicker;
+		@include center();
+		margin-top:-100px;
+		margin-bottom:100px;
+		padding-top:20px;
+		text-align:center;
+		@include border-radius(5px);
+		
+
+		&:after{  
+			content: "";
+			  position: absolute;
+			  border-width: 12px 12px 0px;
+			  border-style: solid;
+			  border-color: $backcolor_nosotros_kicker transparent;
+			  display: block;
+			  width: 0;
+			  height: 0;
+			  margin-top:18px;
+			  margin-left: 120px;
+		}
+	}
 
 	section{
 

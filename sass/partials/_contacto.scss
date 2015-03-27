@@ -2,4 +2,71 @@
 	@include section_base($backcolor_contacto, $backimage_contacto);
 	background-position: -10% 50%;
 	height:90vh;
+	min-height:900px;
+
+	div{
+		article{
+				float:left;
+			margin-left:20px;
+			
+			h3{
+				padding-bottom:30px;
+			}
+
+			&:nth-child(1){
+				float:none;
+			}
+			
+			&:nth-child(2){
+				p{
+					line-height:26px;
+				}
+			}
+			
+			&:nth-child(3){
+				height:220px;
+				width:260px;
+				margin-top:50px;
+				@include border-radius(5px);
+			}
+
+			&:nth-child(4){
+				width:540px;
+				float:right;
+				
+				input[type=text]{
+					border:none;
+					height:40px;
+					width:258px;
+					background-color:$backcolor_contacto_input;
+					@include border-radius(5px);
+
+					&:nth-child(2){
+						margin-left:18px;
+					}
+				}
+
+				textarea{
+					border:none;
+					width:533px;
+					margin-top:20px;
+					margin-bottom:20px;
+					background-color:$backcolor_contacto_input;
+					@include border-radius(5px);
+				}
+				
+				input[type=submit]{
+					border:none;
+					padding:10px 100px 10px 100px;
+					background-color:$backcolor_contacto_boton;
+					@include border-radius(5px);
+					@include center();
+					cursor:pointer;
+					color:white;
+					font-family: $fuente_principal;
+					font-size:1.7em;
+				}
+			}
+		}
+	}
 }

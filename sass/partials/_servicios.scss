@@ -1,5 +1,6 @@
 .servicios{
 	@include section_base($backcolor_servicios, $backimage_servicios);
+	min-height: 1050px;
 
 	section{
 
@@ -20,8 +21,6 @@
 				border-color: $backcolor_servicios_article_alfa;
 				border-width:15px;
 				margin-top:45px;
-					@include transition-property(background-color);
-					@include transition-duration(0.5s);
 				
 
 				svg{
@@ -56,20 +55,15 @@
 				cursor:pointer;
 
 				div{
-					background-color:transparent;
-					border-color:rgba(255,255,255,0);
 
 					svg{
-						fill:white;
-						width:166px;
-						height:166px;
-						margin-left:-10px;
+						width:100px;
+						height:100px;
+						@include transition-property(height);
+						@include transition-duration(1s);
 					}
 				}
 			}
-
 		}
-
 	}
-
 }

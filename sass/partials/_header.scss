@@ -1,21 +1,22 @@
 header{
-	height:120px;
+	height:60px;
 	width:100%;
 	top:0px;
 	position:fixed;
-	@include degradado();
 	@include center();
+	/*background-color:$backcolor_header;
+	border-bottom: solid 5px $backcolor_inicio_kicker;*/
 }
 h1{
 	float:left;
 	color:white;
 	font-family: $fuente_logo;
-	padding-top:50px;
+	padding-top:10px;
 }
 
 nav{
 	float:right;
-	padding-top:50px;
+	padding-top:20px;
 
 	ul{
 		list-style: none;

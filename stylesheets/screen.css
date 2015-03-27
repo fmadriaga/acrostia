@@ -103,45 +103,39 @@ p {
 
 /* line 1, ../sass/partials/_header.scss */
 header {
-  height: 120px;
+  height: 60px;
   width: 100%;
   top: 0px;
   position: fixed;
-  background: rgba(43, 43, 43, 0.64);
-  background: -moz-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(43, 43, 43, 0.64)), color-stop(0%, rgba(102, 102, 102, 0.64)), color-stop(0%, rgba(89, 89, 89, 0.64)), color-stop(0%, rgba(0, 0, 0, 0.64)), color-stop(100%, rgba(44, 44, 44, 0)));
-  background: -webkit-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  background: -o-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  background: -ms-linear-gradient(top, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  background: linear-gradient(to bottom, rgba(43, 43, 43, 0.64) 0%, rgba(102, 102, 102, 0.64) 0%, rgba(89, 89, 89, 0.64) 0%, rgba(0, 0, 0, 0.64) 0%, rgba(44, 44, 44, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#2c2c2c', GradientType=0 );
   display: block;
   margin: auto auto;
+  /*background-color:$backcolor_header;
+  border-bottom: solid 5px $backcolor_inicio_kicker;*/
 }
 
-/* line 9, ../sass/partials/_header.scss */
+/* line 10, ../sass/partials/_header.scss */
 h1 {
   float: left;
   color: white;
   font-family: "Lobster", cursive;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
-/* line 16, ../sass/partials/_header.scss */
+/* line 17, ../sass/partials/_header.scss */
 nav {
   float: right;
-  padding-top: 50px;
+  padding-top: 20px;
 }
-/* line 20, ../sass/partials/_header.scss */
+/* line 21, ../sass/partials/_header.scss */
 nav ul {
   list-style: none;
 }
-/* line 23, ../sass/partials/_header.scss */
+/* line 24, ../sass/partials/_header.scss */
 nav ul li {
   display: inline;
   padding-left: 40px;
 }
-/* line 27, ../sass/partials/_header.scss */
+/* line 28, ../sass/partials/_header.scss */
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -209,13 +203,13 @@ nav ul li a {
 /* line 1, ../sass/partials/_servicios.scss */
 .servicios {
   height: 100vh;
-  min-height: 1000px;
   background-color: #b54b51;
   background-image: url("../images/background_servicios.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  min-height: 1050px;
 }
-/* line 6, ../sass/partials/_servicios.scss */
+/* line 7, ../sass/partials/_servicios.scss */
 .servicios section article {
   width: 260px;
   height: 400px;
@@ -223,7 +217,7 @@ nav ul li a {
   margin-left: 16px;
   background-color: rgba(200, 83, 90, 0.8);
 }
-/* line 13, ../sass/partials/_servicios.scss */
+/* line 14, ../sass/partials/_servicios.scss */
 .servicios section article div {
   width: 140px;
   height: 140px;
@@ -237,16 +231,8 @@ nav ul li a {
   border-color: #c8535a;
   border-width: 15px;
   margin-top: 45px;
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
 }
-/* line 27, ../sass/partials/_servicios.scss */
+/* line 26, ../sass/partials/_servicios.scss */
 .servicios section article div svg {
   width: 80px;
   height: 80px;
@@ -267,50 +253,51 @@ nav ul li a {
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 39, ../sass/partials/_servicios.scss */
+/* line 38, ../sass/partials/_servicios.scss */
 .servicios section article h3 {
   padding: 30px 0 50px 0;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 45, ../sass/partials/_servicios.scss */
+/* line 44, ../sass/partials/_servicios.scss */
 .servicios section article p {
   text-align: center;
   padding: 0 27px 0 27px;
   line-height: 1.3em;
 }
-/* line 51, ../sass/partials/_servicios.scss */
+/* line 50, ../sass/partials/_servicios.scss */
 .servicios section article:nth-child(1) {
   margin-left: 0px;
 }
-/* line 55, ../sass/partials/_servicios.scss */
+/* line 54, ../sass/partials/_servicios.scss */
 .servicios section article:hover {
   cursor: pointer;
 }
-/* line 58, ../sass/partials/_servicios.scss */
-.servicios section article:hover div {
-  background-color: transparent;
-  border-color: rgba(255, 255, 255, 0);
-}
-/* line 62, ../sass/partials/_servicios.scss */
+/* line 59, ../sass/partials/_servicios.scss */
 .servicios section article:hover div svg {
-  fill: white;
-  width: 166px;
-  height: 166px;
-  margin-left: -10px;
+  width: 100px;
+  height: 100px;
+  -moz-transition-property: height;
+  -o-transition-property: height;
+  -webkit-transition-property: height;
+  transition-property: height;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 /* line 1, ../sass/partials/_nosotros.scss */
 .nosotros {
   height: 100vh;
-  min-height: 1000px;
   background-color: #665464;
   background-image: url("../images/background_nosotros.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 30% 50%;
+  min-height: 1000px;
 }
-/* line 7, ../sass/partials/_nosotros.scss */
+/* line 8, ../sass/partials/_nosotros.scss */
 .nosotros section article {
   width: 260px;
   height: 380px;
@@ -318,7 +305,7 @@ nav ul li a {
   margin-left: 16px;
   background-color: rgba(76, 63, 75, 0.5);
 }
-/* line 15, ../sass/partials/_nosotros.scss */
+/* line 16, ../sass/partials/_nosotros.scss */
 .nosotros section article svg {
   width: 166px;
   height: 166px;
@@ -326,92 +313,164 @@ nav ul li a {
   margin: auto auto;
   fill: rgba(76, 63, 75, 0.5);
   margin-top: 43px;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
-/* line 23, ../sass/partials/_nosotros.scss */
+/* line 26, ../sass/partials/_nosotros.scss */
 .nosotros section article h3 {
   padding: 27px 0 15px 0;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 29, ../sass/partials/_nosotros.scss */
+/* line 32, ../sass/partials/_nosotros.scss */
 .nosotros section article p {
   margin-top: 0px;
   padding: 15px 0 40px 0;
   color: #a1ca6c;
   text-align: center;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 36, ../sass/partials/_nosotros.scss */
+/* line 41, ../sass/partials/_nosotros.scss */
 .nosotros section article:nth-child(1) {
   margin-left: 0px;
 }
-/* line 40, ../sass/partials/_nosotros.scss */
+/* line 45, ../sass/partials/_nosotros.scss */
 .nosotros section article ul {
   width: 190px;
   display: block;
   margin: auto auto;
 }
-/* line 44, ../sass/partials/_nosotros.scss */
+/* line 49, ../sass/partials/_nosotros.scss */
 .nosotros section article ul li {
   display: inline-table;
   padding-left: 18px;
 }
-/* line 49, ../sass/partials/_nosotros.scss */
+/* line 54, ../sass/partials/_nosotros.scss */
 .nosotros section article ul li a svg {
   width: 31px;
   height: 31px;
   margin-top: 0px;
 }
-/* line 54, ../sass/partials/_nosotros.scss */
+/* line 59, ../sass/partials/_nosotros.scss */
 .nosotros section article ul li a svg g:nth-child(1) {
   fill: rgba(76, 63, 75, 0.5);
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
-/* line 60, ../sass/partials/_nosotros.scss */
+/* line 67, ../sass/partials/_nosotros.scss */
 .nosotros section article ul li:nth-child(1) {
   padding-left: 0px;
 }
-/* line 66, ../sass/partials/_nosotros.scss */
+/* line 73, ../sass/partials/_nosotros.scss */
 .nosotros section article:hover {
   cursor: pointer;
 }
-/* line 68, ../sass/partials/_nosotros.scss */
+/* line 75, ../sass/partials/_nosotros.scss */
 .nosotros section article:hover svg {
   fill: #df5c64;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
-/* line 72, ../sass/partials/_nosotros.scss */
+/* line 81, ../sass/partials/_nosotros.scss */
 .nosotros section article:hover p {
   color: #df5c64;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 79, ../sass/partials/_nosotros.scss */
+/* line 90, ../sass/partials/_nosotros.scss */
 .nosotros section article:hover ul li:nth-child(1) g:nth-child(1) {
   fill: #4f689e;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 84, ../sass/partials/_nosotros.scss */
+/* line 97, ../sass/partials/_nosotros.scss */
 .nosotros section article:hover ul li:nth-child(2) g:nth-child(1) {
   fill: #74c7d5;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 89, ../sass/partials/_nosotros.scss */
+/* line 104, ../sass/partials/_nosotros.scss */
 .nosotros section article:hover ul li:nth-child(3) g:nth-child(1) {
   fill: #df5c64;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 94, ../sass/partials/_nosotros.scss */
+/* line 111, ../sass/partials/_nosotros.scss */
 .nosotros section article:hover ul li:nth-child(4) g:nth-child(1) {
   fill: #3e61af;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 /* line 1, ../sass/partials/_trabajos.scss */
 .trabajos {
   height: 100vh;
-  min-height: 1000px;
   background-color: #81a256;
   background-image: url("../images/background_trabajos.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  min-height: 1000px;
 }
-/* line 5, ../sass/partials/_trabajos.scss */
+/* line 6, ../sass/partials/_trabajos.scss */
 .trabajos section {
   margin-top: -100px;
 }
-/* line 8, ../sass/partials/_trabajos.scss */
+/* line 9, ../sass/partials/_trabajos.scss */
 .trabajos section article {
   width: 260px;
   height: 252px;
@@ -420,47 +479,47 @@ nav ul li a {
   margin-top: 16px;
   background-color: white;
 }
-/* line 16, ../sass/partials/_trabajos.scss */
+/* line 17, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(1) {
   margin-left: 0px;
 }
-/* line 18, ../sass/partials/_trabajos.scss */
+/* line 19, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(1) img {
   content: url("../images/galery_1.jpg");
 }
-/* line 23, ../sass/partials/_trabajos.scss */
+/* line 24, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(2) img {
   content: url("../images/galery_2.jpg");
 }
-/* line 28, ../sass/partials/_trabajos.scss */
+/* line 29, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(3) img {
   content: url("../images/galery_3.jpg");
 }
-/* line 33, ../sass/partials/_trabajos.scss */
+/* line 34, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(4) img {
   content: url("../images/galery_4.jpg");
 }
-/* line 37, ../sass/partials/_trabajos.scss */
+/* line 38, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(5) {
   margin-left: 0px;
 }
-/* line 39, ../sass/partials/_trabajos.scss */
+/* line 40, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(5) img {
   content: url("../images/galery_5.jpg");
 }
-/* line 44, ../sass/partials/_trabajos.scss */
+/* line 45, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(6) img {
   content: url("../images/galery_6.jpg");
 }
-/* line 49, ../sass/partials/_trabajos.scss */
+/* line 50, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(7) img {
   content: url("../images/galery_7.jpg");
 }
-/* line 54, ../sass/partials/_trabajos.scss */
+/* line 55, ../sass/partials/_trabajos.scss */
 .trabajos section article:nth-child(8) img {
   content: url("../images/galery_8.jpg");
 }
-/* line 58, ../sass/partials/_trabajos.scss */
+/* line 59, ../sass/partials/_trabajos.scss */
 .trabajos section article div {
   width: 260px;
   height: 202px;
@@ -468,20 +527,20 @@ nav ul li a {
   overflow: hidden;
   margin-bottom: 18px;
 }
-/* line 65, ../sass/partials/_trabajos.scss */
+/* line 66, ../sass/partials/_trabajos.scss */
 .trabajos section article div img {
   width: 260px;
   height: 202px;
   position: absolute;
   width: 100%;
 }
-/* line 73, ../sass/partials/_trabajos.scss */
+/* line 74, ../sass/partials/_trabajos.scss */
 .trabajos section article p {
   text-align: center;
   font-family: "Lato", sans-serif;
   color: grey;
 }
-/* line 78, ../sass/partials/_trabajos.scss */
+/* line 79, ../sass/partials/_trabajos.scss */
 .trabajos section article p:after {
   content: "";
   position: absolute;
@@ -494,7 +553,7 @@ nav ul li a {
   margin-top: -43px;
   margin-left: 120px;
 }
-/* line 91, ../sass/partials/_trabajos.scss */
+/* line 92, ../sass/partials/_trabajos.scss */
 .trabajos section article p:before {
   content: "";
   position: absolute;
@@ -505,24 +564,24 @@ nav ul li a {
   margin-left: 0px;
   background-color: rgba(0, 0, 0, 0.7);
   background-image: url("../images/mas3.svg");
-  background-position: 50% 50%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
   border-style: none;
   opacity: 0;
-  -moz-transition-property: height, opacity;
-  -o-transition-property: height, opacity;
-  -webkit-transition-property: height, opacity;
-  transition-property: height, opacity;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -moz-transition-property: height, opacity, background-position;
+  -o-transition-property: height, opacity, background-position;
+  -webkit-transition-property: height, opacity, background-position;
+  transition-property: height, opacity, background-position;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
-/* line 110, ../sass/partials/_trabajos.scss */
+/* line 111, ../sass/partials/_trabajos.scss */
 .trabajos section article:hover {
   cursor: pointer;
 }
-/* line 114, ../sass/partials/_trabajos.scss */
+/* line 115, ../sass/partials/_trabajos.scss */
 .trabajos section article:hover p:before {
   content: "";
   position: absolute;
@@ -537,26 +596,97 @@ nav ul li a {
   background-repeat: no-repeat;
   border-style: none;
   opacity: 1;
-  -moz-transition-property: height, opacity;
-  -o-transition-property: height, opacity;
-  -webkit-transition-property: height, opacity;
-  transition-property: height, opacity;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -moz-transition-property: height, opacity, background-position;
+  -o-transition-property: height, opacity, background-position;
+  -webkit-transition-property: height, opacity, background-position;
+  transition-property: height, opacity, background-position;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 /* line 1, ../sass/partials/_contacto.scss */
 .contacto {
   height: 100vh;
-  min-height: 1000px;
   background-color: #75b4aa;
   background-image: url("../images/background_contacto.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: -10% 50%;
   height: 90vh;
+  min-height: 900px;
+}
+/* line 8, ../sass/partials/_contacto.scss */
+.contacto div article {
+  float: left;
+  margin-left: 20px;
+}
+/* line 12, ../sass/partials/_contacto.scss */
+.contacto div article h3 {
+  padding-bottom: 30px;
+}
+/* line 16, ../sass/partials/_contacto.scss */
+.contacto div article:nth-child(1) {
+  float: none;
+}
+/* line 21, ../sass/partials/_contacto.scss */
+.contacto div article:nth-child(2) p {
+  line-height: 26px;
+}
+/* line 26, ../sass/partials/_contacto.scss */
+.contacto div article:nth-child(3) {
+  height: 220px;
+  width: 260px;
+  margin-top: 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 33, ../sass/partials/_contacto.scss */
+.contacto div article:nth-child(4) {
+  width: 540px;
+  float: right;
+}
+/* line 37, ../sass/partials/_contacto.scss */
+.contacto div article:nth-child(4) input[type=text] {
+  border: none;
+  height: 40px;
+  width: 258px;
+  background-color: #68a097;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 44, ../sass/partials/_contacto.scss */
+.contacto div article:nth-child(4) input[type=text]:nth-child(2) {
+  margin-left: 18px;
+}
+/* line 49, ../sass/partials/_contacto.scss */
+.contacto div article:nth-child(4) textarea {
+  border: none;
+  width: 533px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #68a097;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 58, ../sass/partials/_contacto.scss */
+.contacto div article:nth-child(4) input[type=submit] {
+  border: none;
+  padding: 10px 100px 10px 100px;
+  background-color: #df5c64;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  margin: auto auto;
+  cursor: pointer;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 1.7em;
 }
 
 /* line 1, ../sass/partials/_footer.scss */

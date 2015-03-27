@@ -22,7 +22,6 @@
 
 @mixin section_base($backcolor, $backimage){
 	height:100vh;
-	min-height: 1000px;
 	background-color:$backcolor;
 	background-image:$backimage;
 	background-attachment: fixed;

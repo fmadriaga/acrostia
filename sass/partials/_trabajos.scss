@@ -1,5 +1,6 @@
 .trabajos{
 	@include section_base($backcolor_trabajos, $backimage_trabajos);
+	min-height: 1000px;
 	
 
 	section{
@@ -98,12 +99,12 @@
 					margin-left:0px;
 					background-color:rgba(0,0,0,0.7);
 					background-image:url('../images/mas3.svg');
-					background-position:50% 50%;
+					background-position:50% 100%;
 					background-repeat: no-repeat;
 					border-style:none;
 					opacity:0;
-					@include transition-property(height,opacity);
-					@include transition-duration(0.3s);
+					@include transition-property(height,opacity, background-position);
+					@include transition-duration(1s);
 				}
 			}
 
@@ -125,8 +126,8 @@
 						background-repeat: no-repeat;
 						border-style:none;
 						opacity:1;
-						@include transition-property(height, opacity);
-						@include transition-duration(0.5s);
+						@include transition-property(height,opacity, background-position);
+						@include transition-duration(1s);
 					}
 				}
 			}			

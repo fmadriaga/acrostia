@@ -72,6 +72,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*Importa los módulos*/
 /*Fonts colors*/
 /*Background colors*/
+/*Background images*/
+/*Icons colors*/
+/*Ampliar imagen*/
 /* line 1, ../sass/partials/_reset.scss */
 body {
   color: white;
@@ -80,17 +83,17 @@ body {
 
 /* line 6, ../sass/partials/_reset.scss */
 h1 {
-  font-size: 2em;
+  font-size: 2.3em;
 }
 
 /* line 9, ../sass/partials/_reset.scss */
 h2 {
-  font-size: 1.4em;
+  font-size: 2em;
 }
 
 /* line 12, ../sass/partials/_reset.scss */
 h3 {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 /* line 15, ../sass/partials/_reset.scss */
@@ -150,34 +153,35 @@ nav ul li a {
 /* line 1, ../sass/partials/_inicio.scss */
 .inicio {
   height: 100vh;
+  min-height: 1000px;
   position-top: 0px;
   background-image: url("../images/background_inicio.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
 }
-/* line 9, ../sass/partials/_inicio.scss */
+/* line 10, ../sass/partials/_inicio.scss */
 .inicio .slide_handler {
   display: block;
   margin: auto auto;
   padding-top: 30%;
   width: 1100px;
 }
-/* line 14, ../sass/partials/_inicio.scss */
+/* line 15, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span {
   font-size: 4em;
   color: white;
   font-family: "Lobster", cursive;
 }
-/* line 19, ../sass/partials/_inicio.scss */
+/* line 20, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span:nth-child(1) {
   float: left;
 }
-/* line 23, ../sass/partials/_inicio.scss */
+/* line 24, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span:nth-child(2) {
   float: right;
 }
-/* line 29, ../sass/partials/_inicio.scss */
+/* line 30, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div {
   display: block;
   margin: auto auto;
@@ -185,18 +189,18 @@ nav ul li a {
   height: 80px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-/* line 36, ../sass/partials/_inicio.scss */
+/* line 37, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div span {
   font-size: 2.1em;
-  color: rgba(116, 199, 213, 0.9);
+  color: #74c7d5;
   display: inline;
 }
-/* line 42, ../sass/partials/_inicio.scss */
+/* line 43, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div span:nth-child(1) {
   text-align: right;
   float: left;
 }
-/* line 47, ../sass/partials/_inicio.scss */
+/* line 48, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div span:nth-child(2) {
   font-size: 5em;
   float: right;
@@ -205,79 +209,364 @@ nav ul li a {
 /* line 1, ../sass/partials/_servicios.scss */
 .servicios {
   height: 100vh;
-  min-height: 600px;
+  min-height: 1000px;
   background-color: #b54b51;
+  background-image: url("../images/background_servicios.png");
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 /* line 6, ../sass/partials/_servicios.scss */
 .servicios section article {
   width: 260px;
-  height: 300px;
+  height: 400px;
   display: inline-table;
   margin-left: 16px;
   background-color: rgba(200, 83, 90, 0.8);
 }
 /* line 13, ../sass/partials/_servicios.scss */
-.servicios section article img {
+.servicios section article div {
   width: 140px;
   height: 140px;
+  background-color: white;
+  -webkit-border-radius: 140px;
+  -moz-border-radius: 140px;
+  border-radius: 140px;
   display: block;
   margin: auto auto;
+  border-style: double;
+  border-color: #c8535a;
+  border-width: 15px;
+  margin-top: 45px;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 19, ../sass/partials/_servicios.scss */
+/* line 27, ../sass/partials/_servicios.scss */
+.servicios section article div svg {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: auto auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  fill: #c8535a;
+  -moz-transition-property: height;
+  -o-transition-property: height;
+  -webkit-transition-property: height;
+  transition-property: height;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+/* line 39, ../sass/partials/_servicios.scss */
 .servicios section article h3 {
-  padding: 20px 0 20px 0;
+  padding: 30px 0 50px 0;
   text-align: center;
+  text-transform: uppercase;
 }
-/* line 24, ../sass/partials/_servicios.scss */
+/* line 45, ../sass/partials/_servicios.scss */
 .servicios section article p {
   text-align: center;
-  padding: 0 10px 0 10px;
-  line-height: 1.2em;
+  padding: 0 27px 0 27px;
+  line-height: 1.3em;
 }
-/* line 30, ../sass/partials/_servicios.scss */
+/* line 51, ../sass/partials/_servicios.scss */
 .servicios section article:nth-child(1) {
   margin-left: 0px;
+}
+/* line 55, ../sass/partials/_servicios.scss */
+.servicios section article:hover {
+  cursor: pointer;
+}
+/* line 58, ../sass/partials/_servicios.scss */
+.servicios section article:hover div {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0);
+}
+/* line 62, ../sass/partials/_servicios.scss */
+.servicios section article:hover div svg {
+  fill: white;
+  width: 166px;
+  height: 166px;
+  margin-left: -10px;
 }
 
 /* line 1, ../sass/partials/_nosotros.scss */
 .nosotros {
   height: 100vh;
-  min-height: 600px;
+  min-height: 1000px;
   background-color: #665464;
+  background-image: url("../images/background_nosotros.png");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+}
+/* line 7, ../sass/partials/_nosotros.scss */
+.nosotros section article {
+  width: 260px;
+  height: 380px;
+  display: inline-table;
+  margin-left: 16px;
+  background-color: rgba(76, 63, 75, 0.5);
+}
+/* line 15, ../sass/partials/_nosotros.scss */
+.nosotros section article svg {
+  width: 166px;
+  height: 166px;
+  display: block;
+  margin: auto auto;
+  fill: rgba(76, 63, 75, 0.5);
+  margin-top: 43px;
+}
+/* line 23, ../sass/partials/_nosotros.scss */
+.nosotros section article h3 {
+  padding: 27px 0 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 29, ../sass/partials/_nosotros.scss */
+.nosotros section article p {
+  margin-top: 0px;
+  padding: 15px 0 40px 0;
+  color: #a1ca6c;
+  text-align: center;
+}
+/* line 36, ../sass/partials/_nosotros.scss */
+.nosotros section article:nth-child(1) {
+  margin-left: 0px;
+}
+/* line 40, ../sass/partials/_nosotros.scss */
+.nosotros section article ul {
+  width: 190px;
+  display: block;
+  margin: auto auto;
+}
+/* line 44, ../sass/partials/_nosotros.scss */
+.nosotros section article ul li {
+  display: inline-table;
+  padding-left: 18px;
+}
+/* line 49, ../sass/partials/_nosotros.scss */
+.nosotros section article ul li a svg {
+  width: 31px;
+  height: 31px;
+  margin-top: 0px;
+}
+/* line 54, ../sass/partials/_nosotros.scss */
+.nosotros section article ul li a svg g:nth-child(1) {
+  fill: rgba(76, 63, 75, 0.5);
+}
+/* line 60, ../sass/partials/_nosotros.scss */
+.nosotros section article ul li:nth-child(1) {
+  padding-left: 0px;
+}
+/* line 66, ../sass/partials/_nosotros.scss */
+.nosotros section article:hover {
+  cursor: pointer;
+}
+/* line 68, ../sass/partials/_nosotros.scss */
+.nosotros section article:hover svg {
+  fill: #df5c64;
+}
+/* line 72, ../sass/partials/_nosotros.scss */
+.nosotros section article:hover p {
+  color: #df5c64;
+}
+/* line 79, ../sass/partials/_nosotros.scss */
+.nosotros section article:hover ul li:nth-child(1) g:nth-child(1) {
+  fill: #4f689e;
+}
+/* line 84, ../sass/partials/_nosotros.scss */
+.nosotros section article:hover ul li:nth-child(2) g:nth-child(1) {
+  fill: #74c7d5;
+}
+/* line 89, ../sass/partials/_nosotros.scss */
+.nosotros section article:hover ul li:nth-child(3) g:nth-child(1) {
+  fill: #df5c64;
+}
+/* line 94, ../sass/partials/_nosotros.scss */
+.nosotros section article:hover ul li:nth-child(4) g:nth-child(1) {
+  fill: #3e61af;
 }
 
 /* line 1, ../sass/partials/_trabajos.scss */
 .trabajos {
   height: 100vh;
-  min-height: 600px;
+  min-height: 1000px;
   background-color: #81a256;
+  background-image: url("../images/background_trabajos.png");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* line 5, ../sass/partials/_trabajos.scss */
+.trabajos section {
+  margin-top: -100px;
+}
+/* line 8, ../sass/partials/_trabajos.scss */
+.trabajos section article {
+  width: 260px;
+  height: 252px;
+  display: inline-table;
+  margin-left: 16px;
+  margin-top: 16px;
+  background-color: white;
+}
+/* line 16, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(1) {
+  margin-left: 0px;
+}
+/* line 18, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(1) img {
+  content: url("../images/galery_1.jpg");
+}
+/* line 23, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(2) img {
+  content: url("../images/galery_2.jpg");
+}
+/* line 28, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(3) img {
+  content: url("../images/galery_3.jpg");
+}
+/* line 33, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(4) img {
+  content: url("../images/galery_4.jpg");
+}
+/* line 37, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(5) {
+  margin-left: 0px;
+}
+/* line 39, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(5) img {
+  content: url("../images/galery_5.jpg");
+}
+/* line 44, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(6) img {
+  content: url("../images/galery_6.jpg");
+}
+/* line 49, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(7) img {
+  content: url("../images/galery_7.jpg");
+}
+/* line 54, ../sass/partials/_trabajos.scss */
+.trabajos section article:nth-child(8) img {
+  content: url("../images/galery_8.jpg");
+}
+/* line 58, ../sass/partials/_trabajos.scss */
+.trabajos section article div {
+  width: 260px;
+  height: 202px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+/* line 65, ../sass/partials/_trabajos.scss */
+.trabajos section article div img {
+  width: 260px;
+  height: 202px;
+  position: absolute;
+  width: 100%;
+}
+/* line 73, ../sass/partials/_trabajos.scss */
+.trabajos section article p {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: grey;
+}
+/* line 78, ../sass/partials/_trabajos.scss */
+.trabajos section article p:after {
+  content: "";
+  position: absolute;
+  border-width: 0px 12px 12px;
+  border-style: solid;
+  border-color: white transparent;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: -43px;
+  margin-left: 120px;
+}
+/* line 91, ../sass/partials/_trabajos.scss */
+.trabajos section article p:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 260px;
+  height: 0px;
+  margin-top: -220px;
+  margin-left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url("../images/mas3.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-style: none;
+  opacity: 0;
+  -moz-transition-property: height, opacity;
+  -o-transition-property: height, opacity;
+  -webkit-transition-property: height, opacity;
+  transition-property: height, opacity;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 110, ../sass/partials/_trabajos.scss */
+.trabajos section article:hover {
+  cursor: pointer;
+}
+/* line 114, ../sass/partials/_trabajos.scss */
+.trabajos section article:hover p:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 260px;
+  height: 202px;
+  margin-top: -220px;
+  margin-left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url("../images/mas3.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-style: none;
+  opacity: 1;
+  -moz-transition-property: height, opacity;
+  -o-transition-property: height, opacity;
+  -webkit-transition-property: height, opacity;
+  transition-property: height, opacity;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 /* line 1, ../sass/partials/_contacto.scss */
 .contacto {
   height: 100vh;
-  min-height: 600px;
+  min-height: 1000px;
   background-color: #75b4aa;
+  background-image: url("../images/background_contacto.png");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: -10% 50%;
   height: 90vh;
-}
-
-/* line 6, ../sass/partials/_contacto.scss */
-footer {
-  height: 10vh;
-  background-color: #68a097;
-  bottom: 0px;
 }
 
 /* line 1, ../sass/partials/_footer.scss */
 footer {
   height: 10vh;
   min-height: 150px;
+  bottom: 0px;
+  background-color: #68a097;
 }
-/* line 5, ../sass/partials/_footer.scss */
+/* line 7, ../sass/partials/_footer.scss */
 footer ul {
   width: 310px;
   display: block;
@@ -288,21 +577,21 @@ footer ul {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 10, ../sass/partials/_footer.scss */
+/* line 12, ../sass/partials/_footer.scss */
 footer ul li {
   display: inline;
   padding-left: 20px;
 }
-/* line 14, ../sass/partials/_footer.scss */
+/* line 16, ../sass/partials/_footer.scss */
 footer ul li svg {
   width: 60px;
   height: 60px;
 }
-/* line 18, ../sass/partials/_footer.scss */
+/* line 20, ../sass/partials/_footer.scss */
 footer ul li svg g:nth-child(1) {
   fill: #75b4aa;
 }
-/* line 23, ../sass/partials/_footer.scss */
+/* line 25, ../sass/partials/_footer.scss */
 footer ul li:nth-child(1) {
   padding-left: 0px;
 }
@@ -324,8 +613,8 @@ body {
 /* line 7, ../sass/modules/_utility.scss */
 .section_title {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 190px;
+  padding-bottom: 50px;
 }
 /* line 11, ../sass/modules/_utility.scss */
 .section_title h2 {
@@ -335,4 +624,5 @@ body {
 /* line 16, ../sass/modules/_utility.scss */
 .section_title p {
   line-height: 20px;
+  padding-bottom: 120px;
 }

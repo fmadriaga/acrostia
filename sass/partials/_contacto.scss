@@ -1,10 +1,5 @@
 .contacto{
-	@include section_base($backcolor_contacto);
+	@include section_base($backcolor_contacto, $backimage_contacto);
+	background-position: -10% 50%;
 	height:90vh;
-}
-
-footer{
-	height:10vh;
-	background-color:$backcolor_footer;
-	bottom:0px;
 }

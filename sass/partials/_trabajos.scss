@@ -1,3 +1,135 @@
 .trabajos{
-	@include section_base($backcolor_trabajos);
+	@include section_base($backcolor_trabajos, $backimage_trabajos);
+	
+
+	section{
+		margin-top:-100px;
+
+		article{
+			width:260px;
+			height:252px;
+			display:inline-table;
+			margin-left:16px;
+			margin-top:16px;
+			background-color:white;
+
+			&:nth-child(1){
+				margin-left:0px;
+				img{
+					content:$backimage_galeria_1;
+				}
+			}
+			&:nth-child(2){
+				img{
+					content:$backimage_galeria_2;
+				}
+			}
+			&:nth-child(3){
+				img{
+					content:$backimage_galeria_3;
+				}
+			}
+			&:nth-child(4){
+				img{
+					content:$backimage_galeria_4;
+				}
+			}
+			&:nth-child(5){
+				margin-left: 0px;
+				img{
+					content:$backimage_galeria_5;
+				}
+			}
+			&:nth-child(6){
+				img{
+					content:$backimage_galeria_6;
+				}
+			}
+			&:nth-child(7){
+				img{
+					content:$backimage_galeria_7;
+				}
+			}
+			&:nth-child(8){
+				img{
+					content:$backimage_galeria_8;
+				}
+			}
+			div{
+				width:260px;
+				height:202px;
+				position:relative;
+				overflow: hidden;
+				margin-bottom: 18px;
+
+				img{
+					width:260px;
+					height:202px;
+					position:absolute;
+					width:100%;
+				}
+
+			}
+			p{
+				text-align:center;
+				font-family: $fuente_principal;
+				color:grey;
+
+				&:after{
+					content:"";
+					position: absolute;
+					border-width: 0px 12px 12px;
+					border-style: solid;
+					border-color: white transparent;
+					display: block;
+					width: 0;
+					height:0;
+					margin-top:-43px;
+					margin-left:120px;
+				}
+
+				&:before{
+					content:"";
+					position: absolute;
+					display: block;
+					width: 260px;
+					height:0px;
+					margin-top:-220px;
+					margin-left:0px;
+					background-color:rgba(0,0,0,0.7);
+					background-image:url('../images/mas3.svg');
+					background-position:50% 50%;
+					background-repeat: no-repeat;
+					border-style:none;
+					opacity:0;
+					@include transition-property(height,opacity);
+					@include transition-duration(0.3s);
+				}
+			}
+
+			&:hover{
+				cursor:pointer;
+
+				p{
+					&:before{
+						content:"";
+						position: absolute;
+						display: block;
+						width: 260px;
+						height:202px;
+						margin-top:-220px;
+						margin-left:0px;
+						background-color:rgba(0,0,0,0.7);
+						background-image:url('../images/mas3.svg');
+						background-position:50% 50%;
+						background-repeat: no-repeat;
+						border-style:none;
+						opacity:1;
+						@include transition-property(height, opacity);
+						@include transition-duration(0.5s);
+					}
+				}
+			}			
+		}
+	}
 }

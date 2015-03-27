@@ -6,8 +6,8 @@
 @mixin section_title(){
 	.section_title{
 		text-align:center;
-		padding-top:100px;
-		padding-bottom:100px;
+		padding-top:190px;
+		padding-bottom:50px;
 		h2{
 			text-transform:uppercase;
 			padding-bottom:50px;
@@ -15,15 +15,18 @@
 
 		p{
 			line-height: 20px;
+			padding-bottom:120px;
 		}
 	}
 }
 
-@mixin section_base($backcolor){
+@mixin section_base($backcolor, $backimage){
 	height:100vh;
-	min-height:600px;
+	min-height: 1000px;
 	background-color:$backcolor;
+	background-image:$backimage;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
 @mixin degradado(){
@@ -43,10 +46,17 @@
 	border-radius: $size;
 }
 
-@mixin vertical-align {
+@mixin vertical-align() {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+@mixin transition($propiedad, $tiempo){
+	-webkit-transition:$propiedad $tiempo;
+	-moz-transition:$propiedad $tiempo;
+	-o-transition:$propiedad $tiempo;
+	transition:$propiedad $tiempo;
 }

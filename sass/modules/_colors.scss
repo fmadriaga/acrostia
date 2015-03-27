@@ -1,14 +1,41 @@
 /*Fonts colors*/
 $menu_color:white;
 $color_principal:white;
+$backcolor_icons:white;
 
 /*Background colors*/
+$backcolor_inicio_kicker:rgb(116, 199, 213);
 $backcolor_servicios:rgb(181,75,81);
 $backcolor_servicios_article:rgba(200,83,90,0.8);
+$backcolor_servicios_article_alfa:rgb(200,83,90);
 $backcolor_nosotros:rgb(102,84,100);
 $backcolor_nosotros_article:rgba(76,63,75,0.5);
+$backcolor_nosotros_article_alfa:rgb(76,63,75);
 $backcolor_nosotros_kicker:rgb(161,202,108);
+$backcolor_nosotros_hover:rgb(223,92,100);
 $backcolor_trabajos:rgb(129,162,86);
 $backcolor_contacto:rgb(117,180,170);
 $backcolor_contacto_boton:rgb(223,92,100);
 $backcolor_footer:rgb(104,160,151);
+
+/*Background images*/
+$backimage_servicios:url('../images/background_servicios.png');
+$backimage_nosotros:url('../images/background_nosotros.png');
+$backimage_trabajos:url('../images/background_trabajos.png');
+$backimage_contacto:url('../images/background_contacto.png');
+$backimage_galeria_1:url('../images/galery_1.jpg');
+$backimage_galeria_2:url('../images/galery_2.jpg');
+$backimage_galeria_3:url('../images/galery_3.jpg');
+$backimage_galeria_4:url('../images/galery_4.jpg');
+$backimage_galeria_5:url('../images/galery_5.jpg');
+$backimage_galeria_6:url('../images/galery_6.jpg');
+$backimage_galeria_7:url('../images/galery_7.jpg');
+$backimage_galeria_8:url('../images/galery_8.jpg');
+
+/*Icons colors*/
+$icon_facebook:rgb(79,104,158);
+$icon_twitter:rgb(116,199,213);
+$icon_google:rgb(223,92,100);
+$icon_linkedin:rgb(62,97,175);
+
+/*Ampliar imagen*/

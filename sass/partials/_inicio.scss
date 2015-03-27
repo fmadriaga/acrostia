@@ -1,5 +1,6 @@
 .inicio{
 	height:100vh;
+	min-height:1000px;
 	position-top:0px;
 	background-image: url("../images/background_inicio.jpg");
 	background-repeat: no-repeat;
@@ -35,7 +36,7 @@
 
 			span{
 				font-size:2.1em;
-				color:rgba(116, 199, 213, 0.9 );
+				color:$backcolor_inicio_kicker;
 				display:inline;
 
 

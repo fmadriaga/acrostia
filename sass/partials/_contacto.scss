@@ -13,24 +13,24 @@
 				padding-bottom:30px;
 			}
 
-			&:nth-child(1){
+			&:nth-child(2){
 				float:none;
 			}
 			
-			&:nth-child(2){
+			&:nth-child(3){
 				p{
 					line-height:26px;
 				}
 			}
 			
-			&:nth-child(3){
+			&:nth-child(4){
 				height:220px;
 				width:260px;
 				margin-top:50px;
 				@include border-radius(5px);
 			}
 
-			&:nth-child(4){
+			&:nth-child(5){
 				width:540px;
 				float:right;
 				

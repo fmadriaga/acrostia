@@ -10,6 +10,9 @@
 			display:inline-table;
 			margin-left:16px;
 			background-color:$backcolor_servicios_article;
+			/*visibility: hidden;
+			/*@include transition-property(visibility);
+			@include transition-duration(5s);*/
 			
 			div{
 				width:140px;

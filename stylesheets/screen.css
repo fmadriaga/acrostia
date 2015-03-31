@@ -213,8 +213,12 @@ nav ul li {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
-/* line 38, ../sass/partials/_header.scss */
+/* line 37, ../sass/partials/_header.scss */
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -890,14 +894,6 @@ body {
 }
 
 /* line 32, ../sass/partials/_base.scss */
-.marcador {
-  visibility: 0;
-  height: 0px;
-  width: 0px;
-  position: absolute;
-}
-
-/* line 39, ../sass/partials/_base.scss */
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -905,7 +901,7 @@ body {
   overflow-y: auto;
 }
 
-/* line 45, ../sass/partials/_base.scss */
+/* line 38, ../sass/partials/_base.scss */
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -914,12 +910,12 @@ body {
   left: 0;
 }
 
-/* line 52, ../sass/partials/_base.scss */
+/* line 45, ../sass/partials/_base.scss */
 .parallax__layer--base {
   transform: translateZ(0);
 }
 
-/* line 55, ../sass/partials/_base.scss */
+/* line 48, ../sass/partials/_base.scss */
 .parallax__layer--back {
   transform: translateZ(-1px);
 }

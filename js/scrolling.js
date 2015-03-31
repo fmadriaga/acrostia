@@ -62,3 +62,7 @@ function parallax(){
 $( window ).scroll(function() {
 	parallax();
 });
+
+function scroller(pOffset){
+	$('html, body').animate({scrollTop: $(pOffset).offset().top},1000)
+}

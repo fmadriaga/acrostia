@@ -29,13 +29,6 @@ body{
 
 @include section_title();
 
-.marcador{
-	visibility: 0;
-	height:0px;
-	width:0px;
-	position:absolute;
-}
-
 .parallax {
   perspective: 1px;
   height: 100vh;

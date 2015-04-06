@@ -326,55 +326,60 @@ nav ul li a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
+  background-size: cover;
   -moz-animation: slider 60s infinite linear;
   -webkit-animation: slider 60s infinite linear;
   animation: slider 60s infinite linear;
 }
-/* line 12, ../sass/partials/_inicio.scss */
+/* line 13, ../sass/partials/_inicio.scss */
 .inicio .slide_handler {
   display: block;
   margin: auto auto;
-  padding-top: 30%;
+  padding-top: 25%;
   width: 1100px;
 }
-/* line 17, ../sass/partials/_inicio.scss */
+/* line 18, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span {
   font-size: 4em;
   color: white;
   font-family: "Lobster", cursive;
 }
-/* line 22, ../sass/partials/_inicio.scss */
+/* line 23, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span:hover {
   cursor: pointer;
 }
-/* line 26, ../sass/partials/_inicio.scss */
+/* line 27, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span:nth-child(1) {
   float: left;
 }
-/* line 30, ../sass/partials/_inicio.scss */
+/* line 31, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span:nth-child(2) {
   float: right;
 }
-/* line 36, ../sass/partials/_inicio.scss */
+/* line 37, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div {
   display: block;
   margin: auto auto;
   width: 350px;
   height: 80px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
-/* line 43, ../sass/partials/_inicio.scss */
+/* line 46, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div span {
   font-size: 2.1em;
   color: #74c7d5;
   display: inline;
 }
-/* line 49, ../sass/partials/_inicio.scss */
+/* line 52, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div span:nth-child(1) {
   text-align: right;
   float: left;
 }
-/* line 54, ../sass/partials/_inicio.scss */
+/* line 57, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div span:nth-child(2) {
   font-size: 5em;
   float: right;

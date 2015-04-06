@@ -2,10 +2,12 @@
 	height:100vh;
 	min-height:600px;
 	position-top:0px;
-	background-image: url("../images/background_inicio.jpg");
+	background-image: $background_image_uno;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-attachment: fixed;
+
+	@include animation(slider 60s infinite linear);
 
 	.slide_handler{
 		@include center();
@@ -16,6 +18,10 @@
 			font-size: 4em;
 			color:white;
 			font-family: $fuente_logo;
+
+			&:hover{
+				cursor:pointer;
+			}
 
 			&:nth-child(1){
 				float:left;

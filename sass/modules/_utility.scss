@@ -65,3 +65,15 @@
 	0% {background-position:-200% 50%;}
 	100% {background-position:200% 50%;}
 }
+
+@include keyframes(slider){
+	0% {background-image:$background_image_uno;}
+	23% {background-image:$background_image_uno;}
+	25% {background-image:$background_image_dos;}
+	48% {background-image:$background_image_dos;}
+	50% {background-image:$background_image_tres;}
+	73% {background-image:$background_image_tres;}
+	75% {background-image:$background_image_cuatro;}
+	98% {background-image:$background_image_cuatro;}
+	100% {background-image:$background_image_uno;}
+}

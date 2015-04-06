@@ -75,6 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*Background images*/
 /*Icons colors*/
 /*Ampliar imagen*/
+/*Slider principal*/
 /*@mixin border_radius($size){
 	-webkit-border-radius: $size;
 	-moz-border-radius: $size;
@@ -102,6 +103,93 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   100% {
     background-position: 200% 50%;
+  }
+}
+@-moz-keyframes slider {
+  0% {
+    background-image: url("../images/background_inicio1.jpg");
+  }
+  23% {
+    background-image: url("../images/background_inicio1.jpg");
+  }
+  25% {
+    background-image: url("../images/background_inicio2.jpg");
+  }
+  48% {
+    background-image: url("../images/background_inicio2.jpg");
+  }
+  50% {
+    background-image: url("../images/background_inicio3.jpg");
+  }
+  73% {
+    background-image: url("../images/background_inicio3.jpg");
+  }
+  75% {
+    background-image: url("../images/background_inicio4.jpg");
+  }
+  98% {
+    background-image: url("../images/background_inicio4.jpg");
+  }
+  100% {
+    background-image: url("../images/background_inicio1.jpg");
+  }
+}
+@-webkit-keyframes slider {
+  0% {
+    background-image: url("../images/background_inicio1.jpg");
+  }
+  23% {
+    background-image: url("../images/background_inicio1.jpg");
+  }
+  25% {
+    background-image: url("../images/background_inicio2.jpg");
+  }
+  48% {
+    background-image: url("../images/background_inicio2.jpg");
+  }
+  50% {
+    background-image: url("../images/background_inicio3.jpg");
+  }
+  73% {
+    background-image: url("../images/background_inicio3.jpg");
+  }
+  75% {
+    background-image: url("../images/background_inicio4.jpg");
+  }
+  98% {
+    background-image: url("../images/background_inicio4.jpg");
+  }
+  100% {
+    background-image: url("../images/background_inicio1.jpg");
+  }
+}
+@keyframes slider {
+  0% {
+    background-image: url("../images/background_inicio1.jpg");
+  }
+  23% {
+    background-image: url("../images/background_inicio1.jpg");
+  }
+  25% {
+    background-image: url("../images/background_inicio2.jpg");
+  }
+  48% {
+    background-image: url("../images/background_inicio2.jpg");
+  }
+  50% {
+    background-image: url("../images/background_inicio3.jpg");
+  }
+  73% {
+    background-image: url("../images/background_inicio3.jpg");
+  }
+  75% {
+    background-image: url("../images/background_inicio4.jpg");
+  }
+  98% {
+    background-image: url("../images/background_inicio4.jpg");
+  }
+  100% {
+    background-image: url("../images/background_inicio1.jpg");
   }
 }
 /* line 1, ../sass/partials/_reset.scss */
@@ -234,33 +322,40 @@ nav ul li a {
   height: 100vh;
   min-height: 600px;
   position-top: 0px;
-  background-image: url("../images/background_inicio.jpg");
+  background-image: url("../images/background_inicio1.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
+  -moz-animation: slider 60s infinite linear;
+  -webkit-animation: slider 60s infinite linear;
+  animation: slider 60s infinite linear;
 }
-/* line 10, ../sass/partials/_inicio.scss */
+/* line 12, ../sass/partials/_inicio.scss */
 .inicio .slide_handler {
   display: block;
   margin: auto auto;
   padding-top: 30%;
   width: 1100px;
 }
-/* line 15, ../sass/partials/_inicio.scss */
+/* line 17, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span {
   font-size: 4em;
   color: white;
   font-family: "Lobster", cursive;
 }
-/* line 20, ../sass/partials/_inicio.scss */
+/* line 22, ../sass/partials/_inicio.scss */
+.inicio .slide_handler span:hover {
+  cursor: pointer;
+}
+/* line 26, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span:nth-child(1) {
   float: left;
 }
-/* line 24, ../sass/partials/_inicio.scss */
+/* line 30, ../sass/partials/_inicio.scss */
 .inicio .slide_handler span:nth-child(2) {
   float: right;
 }
-/* line 30, ../sass/partials/_inicio.scss */
+/* line 36, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div {
   display: block;
   margin: auto auto;
@@ -268,18 +363,18 @@ nav ul li a {
   height: 80px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-/* line 37, ../sass/partials/_inicio.scss */
+/* line 43, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div span {
   font-size: 2.1em;
   color: #74c7d5;
   display: inline;
 }
-/* line 43, ../sass/partials/_inicio.scss */
+/* line 49, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div span:nth-child(1) {
   text-align: right;
   float: left;
 }
-/* line 48, ../sass/partials/_inicio.scss */
+/* line 54, ../sass/partials/_inicio.scss */
 .inicio .slide_handler div span:nth-child(2) {
   font-size: 5em;
   float: right;

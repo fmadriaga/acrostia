@@ -8,7 +8,7 @@
 	background-attachment: fixed;
 	background-size:cover;
 
-	@include animation(slider 60s infinite linear);
+	/*@include animation(slider 60s infinite linear);*/
 
 	.slide_handler{
 		@include center();

@@ -4,6 +4,18 @@ $( document ).ready(function() {
     $('.nosotros section article').fadeOut();
     $('.trabajos section article').fadeOut();
 
+    $('#galeria>article').click(
+    	function(){
+    		actuateLink(document.getElementTagName('a'));
+    		//$('#galeria>article>div>a').click()
+    	});
+
+    // Initialize popup as usual
+	$('.test-popup-link').magnificPopup({ 
+	  type: 'image'
+		// other options
+	});
+
 });
 
 function parallax(){
@@ -65,4 +77,35 @@ $( window ).scroll(function() {
 
 function scroller(pOffset){
 	$('html, body').animate({scrollTop: $(pOffset).offset().top},1000)
+}
+
+
+
+ function actuateLink(link)
+ {
+      var allowDefaultAction = true;
+
+      if (link.click)
+      {
+          link.click();
+          return;
+      }
+      else if (document.createEvent)
+      {
+          var e = document.createEvent('MouseEvents');
+          e.initEvent(
+               'click'     // event type
+               ,true      // can bubble?
+               ,true      // cancelable?
+          );
+          allowDefaultAction = link.dispatchEvent(e);           
+      }
+
+      if (allowDefaultAction)       
+      {
+          var f = document.createElement('form');
+          f.action = link.href;
+          document.body.appendChild(f);
+          f.submit();
+      }
 }

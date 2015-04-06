@@ -6,16 +6,16 @@
 @mixin section_title(){
 	.section_title{
 		text-align:center;
-		padding-top:190px;
+		padding-top:120px;
 		padding-bottom:50px;
 		h2{
 			text-transform:uppercase;
-			padding-bottom:50px;
+			padding-bottom:30px;
 		}
 
 		p{
 			line-height: 20px;
-			padding-bottom:120px;
+			padding-bottom:70px;
 		}
 	}
 }

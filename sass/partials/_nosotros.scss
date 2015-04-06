@@ -2,6 +2,8 @@
 	@include section_base($backcolor_nosotros, $backimage_nosotros);
 	background-position: 30% 50%;
 	min-height: 1000px;
+	position:relative;
+	z-index: 600;
 	
 	.kicker{
 		width:275px;

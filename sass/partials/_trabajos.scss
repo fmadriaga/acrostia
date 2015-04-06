@@ -1,7 +1,8 @@
 .trabajos{
 	@include section_base($backcolor_trabajos, $backimage_trabajos);
 	min-height: 1000px;
-	
+	position:relative;
+	z-index: 800;
 
 	section{
 		margin-top:-100px;

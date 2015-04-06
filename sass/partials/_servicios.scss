@@ -1,6 +1,8 @@
 .servicios{
 	@include section_base($backcolor_servicios, $backimage_servicios);
 	min-height: 1050px;
+	position:relative;
+	z-index: 400;
 
 	section{
 

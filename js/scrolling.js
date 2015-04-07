@@ -12,14 +12,30 @@ $( document ).ready(function() {
 
     // Initialize popup as usual
 	$('.test-popup-link').magnificPopup({ 
-	  type: 'image',
+		type: 'image',
 		// other options
-	  // Delay in milliseconds before popup is removed
-	  removalDelay: 300,
+		// Delay in milliseconds before popup is removed
+		removalDelay: 300,
 
-	  // Class that is added to popup wrapper and background
-	  // make it unique to apply your CSS animations just to this exact popup
-	  mainClass: 'mfp-fade'
+		// Class that is added to popup wrapper and background
+		// make it unique to apply your CSS animations just to this exact popup
+		mainClass: 'mfp-fade',
+
+		gallery: {
+			// options for gallery
+			enabled: true
+		},
+
+	 	callbacks: {
+	   		beforeOpen: function() {
+	        	hideShowHeader();
+	        	$('body').css('overflow-y','scroll');
+	        },
+	        beforeClose: function(){
+	        	hideShowHeader();
+	        }
+	    },
+
 	});
 
 });
@@ -114,4 +130,8 @@ function scroller(pOffset){
           document.body.appendChild(f);
           f.submit();
       }
+}
+
+function hideShowHeader(){
+  	$('header').toggle();
 }

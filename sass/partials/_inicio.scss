@@ -7,6 +7,9 @@
 	background-position: 50% 50%;
 	background-attachment: fixed;
 	background-size:cover;
+	visibility: visible;
+	@include transition-property(visibility);
+	@include transition-duration(0.5s);
 
 	/*@include animation(slider 60s infinite linear);*/
 

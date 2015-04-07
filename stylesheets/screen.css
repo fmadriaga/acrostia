@@ -393,7 +393,7 @@ nav ul li a {
   -moz-animation: fondo 60s infinite linear;
   -webkit-animation: fondo 60s infinite linear;
   animation: fondo 60s infinite linear;
-  min-height: 1050px;
+  min-height: 820px;
   position: relative;
   z-index: 400;
 }
@@ -489,7 +489,7 @@ nav ul li a {
   -webkit-animation: fondo 60s infinite linear;
   animation: fondo 60s infinite linear;
   background-position: 30% 50%;
-  min-height: 1000px;
+  min-height: 820px;
   position: relative;
   z-index: 600;
 }
@@ -694,7 +694,7 @@ nav ul li a {
   -moz-animation: fondo 60s infinite linear;
   -webkit-animation: fondo 60s infinite linear;
   animation: fondo 60s infinite linear;
-  min-height: 1000px;
+  min-height: 800px;
   position: relative;
   z-index: 800;
 }
@@ -838,6 +838,48 @@ nav ul li a {
   transition-duration: 1s;
 }
 
+/* overlay at start */
+/* line 140, ../sass/partials/_trabajos.scss */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+/* overlay animate in */
+/* line 148, ../sass/partials/_trabajos.scss */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+/* overlay animate out */
+/* line 152, ../sass/partials/_trabajos.scss */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+/* line 157, ../sass/partials/_trabajos.scss */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+/* content animate it */
+/* line 165, ../sass/partials/_trabajos.scss */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+/* content animate out */
+/* line 169, ../sass/partials/_trabajos.scss */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
 /* line 1, ../sass/partials/_contacto.scss */
 .contacto {
   height: 100vh;
@@ -933,8 +975,8 @@ nav ul li a {
 
 /* line 1, ../sass/partials/_footer.scss */
 footer {
-  height: 10vh;
-  min-height: 150px;
+  height: 5vh;
+  min-height: 100px;
   bottom: 0px;
   background-color: #68a097;
 }

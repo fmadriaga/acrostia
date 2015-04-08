@@ -901,28 +901,36 @@ nav ul li a {
   animation: fondo 60s infinite linear;
   background-position: -10% 50%;
   height: 90vh;
-  min-height: 720px;
+  min-height: 630px;
   position: relative;
   z-index: 1000;
 }
-/* line 10, ../sass/partials/_contacto.scss */
+/* line 9, ../sass/partials/_contacto.scss */
+.contacto .section_title {
+  padding-top: 100px;
+}
+/* line 11, ../sass/partials/_contacto.scss */
+.contacto .section_title p {
+  padding-bottom: 0px;
+}
+/* line 17, ../sass/partials/_contacto.scss */
 .contacto div article {
   float: left;
   margin-left: 20px;
 }
-/* line 14, ../sass/partials/_contacto.scss */
+/* line 21, ../sass/partials/_contacto.scss */
 .contacto div article h3 {
   padding-bottom: 30px;
 }
-/* line 18, ../sass/partials/_contacto.scss */
+/* line 25, ../sass/partials/_contacto.scss */
 .contacto div article:nth-child(2) {
   float: none;
 }
-/* line 23, ../sass/partials/_contacto.scss */
+/* line 30, ../sass/partials/_contacto.scss */
 .contacto div article:nth-child(3) p {
   line-height: 26px;
 }
-/* line 28, ../sass/partials/_contacto.scss */
+/* line 35, ../sass/partials/_contacto.scss */
 .contacto div article:nth-child(4) {
   height: 220px;
   width: 260px;
@@ -931,12 +939,12 @@ nav ul li a {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 35, ../sass/partials/_contacto.scss */
+/* line 42, ../sass/partials/_contacto.scss */
 .contacto div article:nth-child(5) {
   width: 540px;
   float: right;
 }
-/* line 39, ../sass/partials/_contacto.scss */
+/* line 46, ../sass/partials/_contacto.scss */
 .contacto div article:nth-child(5) input[type=text], .contacto div article:nth-child(5) input[type=email] {
   border: none;
   height: 40px;
@@ -949,11 +957,11 @@ nav ul li a {
   font-family: "Lato", sans-serif;
   padding-left: 10px;
 }
-/* line 49, ../sass/partials/_contacto.scss */
+/* line 56, ../sass/partials/_contacto.scss */
 .contacto div article:nth-child(5) input[type=text]:nth-child(2), .contacto div article:nth-child(5) input[type=email]:nth-child(2) {
   margin-left: 18px;
 }
-/* line 58, ../sass/partials/_contacto.scss */
+/* line 65, ../sass/partials/_contacto.scss */
 .contacto div article:nth-child(5) textarea {
   border: none;
   width: 533px;
@@ -966,7 +974,7 @@ nav ul li a {
   color: white;
   font-family: "Lato", sans-serif;
 }
-/* line 69, ../sass/partials/_contacto.scss */
+/* line 76, ../sass/partials/_contacto.scss */
 .contacto div article:nth-child(5) input[type=submit] {
   border: none;
   padding: 10px 100px 10px 100px;
@@ -985,7 +993,7 @@ nav ul li a {
 /* line 1, ../sass/partials/_footer.scss */
 footer {
   height: 5vh;
-  min-height: 100px;
+  min-height: 80px;
   bottom: 0px;
   background-color: #68a097;
 }

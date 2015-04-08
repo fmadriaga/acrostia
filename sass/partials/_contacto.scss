@@ -2,9 +2,16 @@
 	@include section_base($backcolor_contacto, $backimage_contacto);
 	background-position: -10% 50%;
 	height:90vh;
-	min-height:720px;
+	min-height:630px;
 	position:relative;
 	z-index: 1000;
+
+	.section_title{
+		padding-top:100px;
+		p{
+			padding-bottom:0px;
+		}
+	}
 
 	div{
 		article{

@@ -21,6 +21,9 @@ $( document ).ready(function() {
 		// make it unique to apply your CSS animations just to this exact popup
 		mainClass: 'mfp-fade',
 
+		// Para que aparezca la barra de desplazamiento
+		overflowY: 'scroll',
+
 		gallery: {
 			// options for gallery
 			enabled: true
